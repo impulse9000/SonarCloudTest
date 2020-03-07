@@ -7,4 +7,4 @@ addons:
 script:
 # other script steps might be done before running the actual analysis
 - cd my-app
-- mvn clean verify sonar:sonar -Pcoverage 
+- sonar-scanner
