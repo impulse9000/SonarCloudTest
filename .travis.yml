@@ -1,6 +1,5 @@
 language: java
 jdk: openjdk8
-  
 addons:
     sonarcloud:
         organization: "fourcats" # the key of the org you chose at step #3
@@ -8,4 +7,4 @@ addons:
 script:
 # other script steps might be done before running the actual analysis
 - cd my-app
-- sonar-scanner 
+- mvn clean verify sonar:sonar -Pcoverage 
