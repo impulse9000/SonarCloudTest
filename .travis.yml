@@ -8,4 +8,4 @@ addons:
 script:
 # other script steps might be done before running the actual analysis
 - cd my-app
-- sonar-scanner (oppure mvn clean verify sonar:sonar -Pcoverage )
+- sonar-scanner 
